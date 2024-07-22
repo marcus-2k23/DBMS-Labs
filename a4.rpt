@@ -1,0 +1,49 @@
+﻿F23 PROG8080 Section 1
+Activity 4
+ 
+
+ 
+Dec  2 2023 11:05PM
+ 
+Question 1
+Dropping existing database
+Question 2
+Question 5
+Question 6
+Question 7
+Question 8
+
+(6 rows affected)
+
+(5 rows affected)
+
+(15 rows affected)
+
+(4 rows affected)
+
+(1 row affected)
+
+(2 rows affected)
+
+(4 rows affected)
+Question 9
+Question 10
+PartNumber                                         SupplierID  PartTypeID  PartDescription                                                                                      FirstName                                                                                            LastName                                                                                             Email                                                                                                                                                  StreetNumber              StreetName                                                                                                                                                                                     City                                                                                                Province                                                                                            Country                                                                                             PostalCode                                         Phone                                                                                      PurchaseDate UnitPrice                               Quantity    extended_amount
+-------------------------------------------------- ----------- ----------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------- -------------------------------------------------- ------------------------------------------------------------------------------------------ ------------ --------------------------------------- ----------- ---------------------------------------
+LEN101                                             1           4           Lenovo 101-Key Computer Keyboard                                                                     Guntar                                                                                               Boyul                                                                                                guntarboyul@example.com                                                                                                                                Random St                 Waterloo                                                                                                                                                                                       Waterloo                                                                                            ON                                                                                                  Canada                                                                                              N1R 2C2                                            519-555-3333                                                                               2022-11-15   7.00                                    50          350.00
+HPM220                                             3           6           HP 22-inch Monitor                                                                                   Jack                                                                                                 Danger                                                                                               jackdanger@example.com                                                                                                                                 101 clover St             Toronto                                                                                                                                                                                        Toronto                                                                                             ON                                                                                                  Canada                                                                                              N1G 2W2                                            519-555-4444                                                                               2022-11-30   45.00                                   30          1350.00
+DL1010                                             1           1           Dell Optiplex 1010                                                                                   Joey                                                                                                 Holt                                                                                                 joey.holt@example.com                                                                                                                                  123 Avenue                Waterloo                                                                                                                                                                                       Waterloo                                                                                            ON                                                                                                  Canada                                                                                              N2N 3C3                                            519-555-1111                                                                               2022-10-31   40.00                                   25          1000.00
+HPM270                                             2           6           HP 27-inch Monitor                                                                                   Klaus                                                                                                Rob                                                                                                  klaus.rob@example.com                                                                                                                                  456 Avenue                Kitchener                                                                                                                                                                                      Kitchener                                                                                           ON                                                                                                  Canada                                                                                              N2N 3C3                                            519-555-2222                                                                               2022-11-10   120.00                                  20          2400.00
+
+(4 rows affected)
+
+Question 11
+BundleName                                         total_cost
+-------------------------------------------------- ---------------------------------------
+Dell Standard bundle                               1035.00
+HP Eco bundle                                      230.00
+
+(2 rows affected)
+
+
+Completion time: 2023-12-02T23:05:43.1319261-05:00

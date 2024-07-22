@@ -1,0 +1,178 @@
+﻿In Class Exercise 3
+ 
+ - 8829569
+ 
+Nov 11 2023 10:04PM
+ 
+  Question 1  
+List the Invoice Number and Vendor Name columns for invoices with a Vendor Name of ’Compuserve’.
+ 
+InvoiceNumber                                      VendorName
+-------------------------------------------------- --------------------------------------------------
+21-4923721                                         Compuserve
+21-4748363                                         Compuserve
+
+(2 rows affected)
+
+  Question 2  
+List the 5 columns for invoices with “Balance Due” greater than $500.
+ 
+InvoiceNumber                                      VendorID    VendorName                                         InvoiceDueDate InvoiceTotal
+-------------------------------------------------- ----------- -------------------------------------------------- -------------- ---------------------
+9982771                                            106         Ford Motor Credit Company                          2020-02-23     503.20
+97/465                                             121         Zylka Design                                       2019-12-24     565.15
+31361833                                           83          Ingram                                             2020-02-10     579.42
+C73-24                                             82          Reiter's Scientific & Pro Books                    2020-02-08     600.00
+97/488                                             121         Zylka Design                                       2019-11-24     601.95
+97/503                                             121         Zylka Design                                       2019-12-28     639.77
+I77271-O01                                         96          Wells Fargo Bank                                   2019-11-16     662.00
+963253230                                          123         Federal Express Corporation                        2020-02-06     739.20
+P02-88D77S7                                        48          Fresno County Tax Collector                        2019-12-02     856.92
+97/553                                             121         Zylka Design                                       2020-01-25     904.14
+MABO1489                                           81          Wang Laboratories, Inc.                            2020-01-11     936.93
+97/486                                             121         Zylka Design                                       2019-12-20     953.10
+97/222                                             121         Zylka Design                                       2020-02-24     1000.46
+Q545443                                            34          IBM                                                2019-12-19     1083.58
+75C-90227                                          103         Dean Witter Reynolds                               2020-01-31     1367.50
+31359783                                           83          Ingram                                             2019-12-23     1575.00
+RTR-72-3662-X                                      107         Franchise Tax Board                                2020-01-04     1600.00
+77290                                              113         Pollstar                                           2020-01-02     1750.00
+989319-487                                         122         United Parcel Service                              2020-01-20     1927.54
+97/522                                             121         Zylka Design                                       2020-01-28     1962.13
+989319-417                                         122         United Parcel Service                              2020-02-22     2051.59
+989319-427                                         122         United Parcel Service                              2020-01-16     2115.81
+989319-477                                         122         United Parcel Service                              2020-01-08     2184.11
+587056                                             100         Cahners Publishing Company                         2020-02-09     2184.50
+989319-497                                         122         United Parcel Service                              2020-01-12     2312.20
+989319-467                                         122         United Parcel Service                              2020-01-31     2318.03
+367447                                             86          Computerworld                                      2019-12-21     2433.00
+989319-437                                         122         United Parcel Service                              2020-01-01     2765.36
+989319-447                                         122         United Parcel Service                              2020-02-23     3689.99
+989319-457                                         122         United Parcel Service                              2019-11-08     3813.33
+10843                                              119         Yesmed, Inc                                        2019-11-30     4901.26
+509786                                             99          Bertelsmann Industry Svcs. Inc                     2020-01-18     6940.25
+P02-3772                                           104         Digital Dreamworks                                 2019-12-20     7125.34
+0-2436                                             110         Malloy Lithographing Inc                           2020-02-29     10976.06
+P-0608                                             110         Malloy Lithographing Inc                           2020-02-22     20551.18
+40318                                              72          Data Reproductions Corp                            2020-01-01     21842.00
+0-2060                                             110         Malloy Lithographing Inc                           2020-02-23     23517.58
+P-0259                                             110         Malloy Lithographing Inc                           2020-02-18     26881.40
+0-2058                                             110         Malloy Lithographing Inc                           2019-12-27     37966.19
+
+(39 rows affected)
+
+  Question 3  
+List the 4 columns: Vendor ID and Vendor Name of vendors, along with the Invoice Number and Invoice Total of the vendors
+ 
+VendorID    VendorName                                         InvoiceNumber                                      InvoiceTotal
+----------- -------------------------------------------------- -------------------------------------------------- ---------------------
+16          Internal Revenue Service                           NULL                                               NULL
+83          Ingram                                             31359783                                           1575.00
+83          Ingram                                             31361833                                           579.42
+
+(3 rows affected)
+
+  Question 4  
+List the 3 columns for invoices with Invoice Date after Dec. 31, 2018. The first column displays ’After 12/31/2018’ followed by 2 columns using MIN() and MAX() aggregate functions with the Invoice Total column as the argument.
+ 
+SelectionDate    LowestInvoiceTotal    HighestInvoiceTotal
+---------------- --------------------- ---------------------
+After 12/31/2018 6.00                  37966.19
+
+(1 row affected)
+
+  Question 5  
+Construct a summary query that groups by two columns (Vendor State and Vendor City). 
+ 
+VendorState VendorCity                                         InvoiceQty  AvgAmount
+----------- -------------------------------------------------- ----------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AZ          Phoenix                                            1           $662.00
+CA          Fresno                                             19          $1,208.75
+CA          Los Angeles                                        1           $503.20
+CA          Oxnard                                             3           $188.00
+CA          Pasadena                                           5           $196.12
+CA          Sacramento                                         7           $253.00
+CA          San Francisco                                      3           $1,211.04
+CA          Turlock                                            1           $95.00
+CA          Valencia                                           1           $6,940.25
+DC          Washington                                         1           $600.00
+MA          Boston                                             1           $1,367.50
+MI          Ann Arbor                                          5           $23,978.48
+MI          Auburn Hills                                       2           $10,963.66
+NV          Reno                                               9           $2,575.33
+NV          The Lake                                           1           $2,184.50
+OH          Cleves                                             1           $207.78
+OH          Columbus                                           2           $9.95
+PA          Philadelphia                                       2           $132.68
+TN          Memphis                                            47          $93.15
+TX          Dallas                                             2           $1,077.21
+
+(20 rows affected)
+
+  Question 6  
+Construct a summary query with a search condition in the WHERE clause for invoices in December, 2019.  
+ 
+InvoiceDate InvoiceQty  InvoiceSum
+----------- ----------- ---------------------
+2019-12-11  4           3867.50
+2019-12-03  3           1832.00
+2019-12-01  3           24627.03
+
+(3 rows affected)
+
+  Question 7  
+Construct a nested subquery that returns a list of Invoice Number, Invoice Date and Invoice Total columns for vendors in the state of Texas (TX).
+ 
+InvoiceNumber                                      InvoiceDate InvoiceTotal
+-------------------------------------------------- ----------- ---------------------
+31361833                                           2020-01-21  579.42
+31359783                                           2019-12-03  1575.00
+
+(2 rows affected)
+
+  Question 8  
+Construct a nested subquery that returns a list of invoices for a vendor with Invoice Total above the Average Invoice Total for that vendor
+ 
+InvoiceNumber                                      VendorID    InvoiceTotal
+-------------------------------------------------- ----------- ---------------------
+Q545443                                            34          1083.58
+40318                                              72          21842.00
+31359783                                           83          1575.00
+0-2058                                             110         37966.19
+P-0259                                             110         26881.40
+97/522                                             121         1962.13
+97/222                                             121         1000.46
+989319-457                                         122         3813.33
+989319-447                                         122         3689.99
+989319-437                                         122         2765.36
+
+(10 rows affected)
+
+  Question 9  
+Construct a correlated subquery in the SELECT clause. Display the Vendor Name from the Vendors table and the “Latest Invoice Date” from the Invoices table.
+ 
+VendorName                                         Latest Invoice Date
+-------------------------------------------------- -------------------
+California Chamber Of Commerce                     NULL
+City Of Fresno                                     NULL
+Crown Printing                                     NULL
+California Data Marketing                          NULL
+Costco                                             NULL
+Cal State Termite                                  NULL
+Custom Printing Company                            NULL
+Capital Resource Credit                            NULL
+Courier Companies, Inc                             NULL
+Cmg Information Services                           NULL
+Computer Library                                   NULL
+Cardinal Business Media, Inc.                      2020-01-28
+Champion Printing Company                          NULL
+Computerworld                                      2019-12-11
+Compuserve                                         2019-11-13
+Cahners Publishing Company                         2019-12-28
+California Business Machines                       NULL
+Coffee Break Service                               2019-12-24
+
+(18 rows affected)
+
+
+Completion time: 2023-11-11T22:04:43.3191210-05:00

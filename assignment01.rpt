@@ -1,0 +1,244 @@
+﻿F23 PROG8080 Section 1
+Assignment 1
+ 
+
+ 
+Sep 30 2023  4:01PM
+ 
+***Question 1: list of all data in academicStatus***
+ 
+code explanation               frenchExplanation
+---- ------------------------- -------------------------
+D    Discontinued              Abandonnées
+N    Normal                    À temps plein, actif
+S    Suspended                 Suspendue
+
+(3 rows affected)
+
+***Question 2: no. and code for all students who discontinued***
+ 
+number  academicStatusCode
+------- ------------------
+7826662 D
+5613716 D
+5582770 D
+5123120 D
+3223278 D
+2238665 D
+1335314 D
+
+(7 rows affected)
+
+***Question 3: students who have been discontinued or suspended.***
+ 
+number  academicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 rows affected)
+
+***Question 4:  province code once from person order by desc***
+ 
+provinceCode
+------------
+ON
+NS
+CA
+AB
+NULL
+
+(5 rows affected)
+
+***Question 5***
+ 
+provinceCode
+------------
+AB
+CA
+NS
+ON
+
+(4 rows affected)
+
+***Question 6***
+ 
+number  lastName                                           firstName                                          city                           countryCode
+------- -------------------------------------------------- -------------------------------------------------- ------------------------------ -----------
+1114453 WANG                                               YOU-FANG                                           PU MIAO                        CHN
+1448422 SINGH                                              SARDAR                                             NEW DELHI                      IND
+1524560 RAYCHAUDHURI                                       RAJKUMAR                                           NEW DELHI                      IND
+1525872 HE                                                 XIAO-LAN                                           CHENG GUAN                     CHN
+1583129 GOVINDARAJAN                                       SURESH                                             MUMBAI                         IND
+1741420 RAJARAMAN                                          ANAND                                              NEW DELHI                      IND
+1846682 HU                                                 REN-LIANG                                          NANPING                        CHN
+2156685 FU                                                 XING                                               CHONGQUING                     CHN
+2214617 KAR                                                SAYAN                                              NEW DELHI                      IND
+2411767 CAO                                                TONG                                               YONZHOU                        CHN
+2858629 ZANG                                               MU                                                 XIN XIANG                      CHN
+3331840 KUMAR                                              ANANT                                              NEW DELHI                      IND
+3383189 ZHONG                                              BEN-DU                                             DONG GUAN                      CHN
+3583317 RAHA                                               SHIBAJI                                            JAIPUR                         IND
+3621323 LIN                                                PAN-JUAN                                           FOSHAN                         CHN
+4171617 DAS                                                BHANU                                              LUCKNOW                        IND
+4331740 LI                                                 ZHI-HUA                                            WU XI                          CHN
+4337333 TOMASZEWSKI                                        TADEUSZ                                            RASZYN                         POL
+4823589 CHAUDHURY                                          HABIB                                              NEW DELHI                      IND
+4878237 DHYANAPEETAM                                       NITYANANDA                                                                        IND
+5383336 SENGUPTA                                           SOUMITRO                                           BHOPAL                         IND
+5386651 LAKSHMANAN                                         VIVEK                                              NEW DELHI                      IND
+5473160 BABU                                               RAMESH                                             NEW DELHI                      IND
+5561733 ZHANG                                              LI                                                 XIAOGAN                        CHN
+5722566 ZENG                                               SHU-YING                                           HANG ZHOU                      CHN
+5785845 THANGADURAI                                        VENKATARAMAN                                       NEW DELHI                      IND
+6117857 ASTHANA                                            PRAVEER                                            NEW DELHI                      IND
+6148753 LIU                                                ZHONG-LING                                         LIAN ZHOU                      CHN
+6286264 RANGWALA                                           ABBAS                                              INDORE                         IND
+6332381 W                                                  PENG-CHENG                                         SHUO ZHOU                      CHN
+6522569 GAO                                                CHIEN                                              CHONGQING                      CHN
+7118532 AO                                                 ZHI-WEN                                            CHUZHOU                        CHN
+7177611 LUO                                                JIAN-XIN                                           FU SHUN                        CHN
+7381874 MUKHI                                              VIJAY                                              CHENNAI                        IND
+7561574 KARJOL                                             GOVIND                                             BANGALORE                      IND
+7677479 PANDITA                                            RAMABAI                                            NEW DELHI                      IND
+7758774 MUKHERJEE                                          JOIA                                               NEW DELHI                      IND
+7762586 ZHANG                                              XAN-XIANG                                          GANZHOU                        CHN
+8516189 WANG                                               MEI-ZHI                                            YIZHOU                         CHN
+8518680 ABBA                                               ALKASUM                                            ABUJA                          NGA
+8826646 BAJCHI                                             BIJAN                                              NEW DELHI                      IND
+
+(41 rows affected)
+
+***Question 7***
+ 
+number  lastName                                           firstName                                          city                           countryCode
+------- -------------------------------------------------- -------------------------------------------------- ------------------------------ -----------
+1686856 ILLING                                             ANDY                                               KITCHENER                      CAN
+2262434 JOHNSON                                            ANDI                                               KITCHENER                      CAN
+
+(2 rows affected)
+
+***Question 8***
+ 
+code  acronym campusCode schoolCode credentialCode name                                               frenchName
+----- ------- ---------- ---------- -------------- -------------------------------------------------- --------------------------------------------------
+0057C CPA     D          EIT        OCAD           Computer Programmer/Analyst (Coop)                 Programmeur / Analyste (Coop)
+0066C CAD     D          EIT        OCGC           Computer Applications Development (Coop)           Développement d'applications informatiques (Coop)
+1009  CP      D          EIT        OCD            Computer Programmer                                Programmeur
+
+(3 rows affected)
+
+***Question 9***
+ 
+code  acronym name
+----- ------- --------------------------------------------------
+0040C ITID    IT Innovation and Design (Coop)
+0057C CPA     Computer Programmer/Analyst (Coop)
+0066C CAD     Computer Applications Development (Coop)
+1097C ITSS    Information Technology Support Services (Coop)
+
+(4 rows affected)
+
+***Question 10***
+ 
+CourseOfferingId studentNumber finalMark
+---------------- ------------- ----------------------
+9                3526415       53
+9                5767777       54
+9                5785845       50
+9                8653370       51
+19               1114453       52
+19               6471585       51
+19               8317323       54
+29               2866564       52
+29               3117777       53
+29               5727664       53
+29               8414815       53
+
+(11 rows affected)
+
+***Question 11***
+ 
+number capacity    memory
+------ ----------- ----------
+2A220  40          4GB
+
+(1 row affected)
+
+***Question 12***
+ 
+number  reportsTo campusCode schoolCode location                       businessPhone                  extension fax            encryptedSin
+------- --------- ---------- ---------- ------------------------------ ------------------------------ --------- -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6860242 NULL      D          TAP        3B21                           (519) 748-5220                 1795      (519) 189-3239 0x003594C1471D394A960E6E0579E2FEFA02000000D440C7E5DB9C524555608E7E715DA69B605D171BC833C57EED572D78ADE5F7D7
+6886352 8436780   G          TAP        23                             (519) 748-5220                 6742      NULL           0x003594C1471D394A960E6E0579E2FEFA020000005B9A7BF4DAD3E7E3FB9A37A17F8E573A3C16CE8C38412923D84100D5A11F7720
+8436780 NULL      D          TAP        4B179                          (519) 748-5220                 7361      (519) 189-3239 0x003594C1471D394A960E6E0579E2FEFA0200000047B90697CC03803B720EB0EAB51A3F544402A53E7F3F6FCCB83AE6561DDA8B1B
+
+(3 rows affected)
+
+***Question 13***
+ 
+lastName                                           User ID
+-------------------------------------------------- --------
+JACOBS                                             tjacobs
+JUELL                                              mjuell
+JOLLIFF                                            mjolliff
+JOHNSON                                            mjohnson
+JETER                                              ljeter
+JUSTUS                                             gjustus
+JAMES                                              djames
+JIRASEK                                            cjirasek
+JOHNSON                                            ajohnson
+JAYSURA                                            ajaysura
+
+(10 rows affected)
+
+***Question 14***
+ 
+number  dob                                                                                                                                                                                                                                                              age
+------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------
+3566163 July 19, 1960                                                                                                                                                                                                                                                    63
+6434468 January 11, 1960                                                                                                                                                                                                                                                 63
+6860242 February 28, 1961                                                                                                                                                                                                                                                62
+6886352 February 12, 1959                                                                                                                                                                                                                                                64
+8135170 November 12, 1952                                                                                                                                                                                                                                                71
+
+(5 rows affected)
+
+***Question 15***
+ 
+Course Code Course Name
+----------- ----------------------------------------------------------------------
+INFO3140    System Development: Game Design
+PROG2250    Programming: Object Oriented Game Programming
+
+(2 rows affected)
+
+***Question 16***
+ 
+Incidental Fee                                               Current Fee           Increased Fee
+------------------------------------------------------------ --------------------- -------------
+CSA Fee                                                      4.50                  0.45
+Graduation/Alumni Services Fee                               18.56                 1.86
+Administration Fee                                           20.60                 2.06
+Student Priority Fee                                         45.46                 4.55
+CSI Capital Development Fee - Doon Campus                    52.77                 5.28
+Recreation/Athletics Fee                                     63.17                 6.32
+CSI Association Fee - Doon Campus                            77.50                 7.75
+Technology Enhancement Fee                                   117.05                11.71
+CSI Health Plan                                              185.68                18.57
+
+(9 rows affected)
+
+
+Completion time: 2023-09-30T16:01:06.3578913-04:00

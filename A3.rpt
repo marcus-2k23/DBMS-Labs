@@ -1,0 +1,191 @@
+﻿F23 PROG8080 Section 1
+Activity 3
+ 
+
+ 
+Nov 18 2023  9:23PM
+ 
+*** Question 1 List person number and birth date for the youngest person.***
+ 
+number  birthdate
+------- -----------------------
+2517621 1992-12-14 00:00:00.000
+
+(1 row affected)
+
+*** Question 2. List the students whose home country is USA or Canada, but not from Ontario, Canada.***
+ 
+number  ShortLastName        ShortFirstName       provinceCode countryCode
+------- -------------------- -------------------- ------------ -----------
+1352236 COSBY                GENE                 NS           CAN
+5123120 FLOYD                YOLANDA              CA           USA
+4512125 LAGERBERG            VALERIE              AB           CAN
+
+(3 rows affected)
+
+*** Question 3. List the courses that are offered in the first semester in the ITSS program.***
+ 
+Course Number Hours       Credits     Course name
+------------- ----------- ----------- ----------------------------------------------------------------------
+COMM1180      45          3           Effective Technical Comunication I
+COMP1380      45          3           Advanced User Applications
+INFO1570      60          4           Technology Infrastructure: Fundamentals
+MATH1910      45          3           Mathematics for IT I
+PROG1780      90          6           Programming: Fundamentals
+
+(5 rows affected)
+
+*** Question 4. List the names of international students enrolled in a post-graduate certificate program.***
+ 
+studentNumber First Name                                         Last Name
+------------- -------------------------------------------------- --------------------------------------------------
+1448422       SARDAR                                             SINGH
+1524560       RAJKUMAR                                           RAYCHAUDHURI
+1525872       XIAO-LAN                                           HE
+1583129       SURESH                                             GOVINDARAJAN
+1741420       ANAND                                              RAJARAMAN
+1846682       REN-LIANG                                          HU
+2156685       XING                                               FU
+2214617       SAYAN                                              KAR
+2411767       TONG                                               CAO
+3331840       ANANT                                              KUMAR
+3583317       SHIBAJI                                            RAHA
+3621323       PAN-JUAN                                           LIN
+4331740       ZHI-HUA                                            LI
+4337333       TADEUSZ                                            TOMASZEWSKI
+5383336       SOUMITRO                                           SENGUPTA
+5386651       VIVEK                                              LAKSHMANAN
+5473160       RAMESH                                             BABU
+5561733       LI                                                 ZHANG
+5722566       SHU-YING                                           ZENG
+6117857       PRAVEER                                            ASTHANA
+6148753       ZHONG-LING                                         LIU
+6286264       ABBAS                                              RANGWALA
+6332381       PENG-CHENG                                         W
+6522569       CHIEN                                              GAO
+7118532       ZHI-WEN                                            AO
+7177611       JIAN-XIN                                           LUO
+7381874       VIJAY                                              MUKHI
+7561574       GOVIND                                             KARJOL
+7758774       JOIA                                               MUKHERJEE
+7762586       XAN-XIANG                                          ZHANG
+8518680       ALKASUM                                            ABBA
+8826646       BIJAN                                              BAJCHI
+8829569       Mary                                               Taneja
+
+(33 rows affected)
+
+*** Question 5. Delete the Person record for Mary Taneja. ***
+ 
+
+(1 row affected)
+
+(2 rows affected)
+*** Question 6. Insert a Person record for Mary Taneja. ***
+ 
+
+(1 row affected)
+number  firstName                                          lastName                                           street                                                                           city                           countryCode postalCode mainPhone                      alternatePhone                 collegeEmail                                                                     personalEmail                                                                    birthdate
+------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------------------------------------- ------------------------------ ----------- ---------- ------------------------------ ------------------------------ -------------------------------------------------------------------------------- -------------------------------------------------------------------------------- -----------------------
+7424478 Mary                                               Taneja                                             FLAT NO. 206 TRIVENI APARTMENTS PITAM PURA                                       NEW DELHI                      IND         110034     0141-6610242                   94324060195                    mtaneja@conestogac.on.ca                                                         mtaneja@bsnl.co.in                                                               1989-10-07 00:00:00.000
+
+(1 row affected)
+
+*** Question 7. Insert a Student record for Mary Taneja. ***
+ 
+
+(1 row affected)
+number  isInternational academicStatusCode financialStatusCode sequentialNumber balance               localStreet                                                                      localCity                      localPostalCode
+------- --------------- ------------------ ------------------- ---------------- --------------------- -------------------------------------------------------------------------------- ------------------------------ ---------------
+7424478 1               N                  N                   0                1130.00               445 GIBSON ST N                                                                  Kitchener                      N2M 4T4
+
+(1 row affected)
+
+*** Question 8. Inspect the Program table to find the program code for the CAD program.***
+ 
+CODE
+-----
+0066C
+
+(1 row affected)
+
+(1 row affected)
+
+studentNumber programCode semester    programStatusCode
+------------- ----------- ----------- -----------------
+7424478       0066C       1           A
+
+(1 row affected)
+
+*** Question 9. Inspect the CourseOffering table and find the id for INFO8000 in the Fall 2020 session. ***
+ 
+id
+-----------
+123
+
+(1 row affected)
+
+(1 row affected)
+
+CourseOfferingId studentNumber finalMark
+---------------- ------------- ----------------------
+123              7424478       0
+
+(1 row affected)
+
+*** Question 10. Insert a Course record for LIBS9010. Use a column list in your INSERT statement.***
+ 
+
+(1 row affected)
+number   hours       credits     name                                                                   frenchName
+-------- ----------- ----------- ---------------------------------------------------------------------- ----------------------------------------------------------------------
+LIBS9010 45          3           Critical Thinking Skills                                               Pensée Critique
+
+(1 row affected)
+
+*** Question 11. Insert a Course record for BUS9070. Do not use a column list in your INSERT statement. ***
+ 
+
+(1 row affected)
+number   hours       credits     name                                                                   frenchName
+-------- ----------- ----------- ---------------------------------------------------------------------- ----------------------------------------------------------------------
+BUS9070  45          3           Introduction To Human Relations                                        Introduction aux relations humaines
+
+(1 row affected)
+
+*** Question 12. Update the Technology Enhancement Fee to $100.00. ***
+ 
+id
+-----------
+5
+
+(1 row affected)
+
+(1 row affected)
+
+BEGIN TRANSACTION
+ 
+
+(1 row affected)
+amountPerSemester UPDATED
+ 
+ROLLBACK
+ 
+id          amountPerSemester     item                                                         frenchItem
+----------- --------------------- ------------------------------------------------------------ ------------------------------------------------------------
+5           100.00                Technology Enhancement Fee                                   Frais de perfectionnement de la technologie
+
+(1 row affected)
+
+*** Question 13 ***
+ 
+
+(1 row affected)
+id          amountPerSemester     item                                                         frenchItem
+----------- --------------------- ------------------------------------------------------------ ------------------------------------------------------------
+5           190.00                Technology Enhancement Fee                                   Frais de perfectionnement de la technologie
+
+(1 row affected)
+
+
+Completion time: 2023-11-18T21:23:40.0599566-05:00
